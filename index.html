@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXO — Dos sentencias, dos soluciones. Práctica formativa TP3 de Desarrollo de Sistemas Web / Front End en el IFTS 29. Propuestas agénticas para Permisos y Contratación." />
+  <title>NEXO — Dos sentencias, dos soluciones | IFTS 29 - TP3</title>
+  
+  <!-- Favicon using extracted logo -->
+  <link rel="icon" type="image/png" href="/assets/nexo-logo.png" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Accessible skip to content link -->
+  <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+  <!-- Header & Sticky Navbar -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand-badge" aria-label="Ir al inicio de NEXO">
+        <img src="/assets/nexo-logo.png" alt="Logo oficial de NEXO - Servicios y reparaciones" class="brand-logo-img" width="44" height="44" />
+        <div class="brand-title">
+          <span class="brand-name">NEXO</span>
+          <span class="brand-tag">Servicios y reparaciones</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Inicio</a></li>
+          <li><a href="#startup" class="nav-link">Startup</a></li>
+          <li><a href="#sentencias" class="nav-link">Sentencias</a></li>
+          <li><a href="#propuesta-1" class="nav-link">Propuesta 1 (R3)</a></li>
+          <li><a href="#propuesta-2" class="nav-link">Propuesta 2 (R4)</a></li>
+          <li><a href="#cierre" class="nav-link">Comparativa</a></li>
+          <li><a href="#equipo" class="nav-link">Equipo</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-meta">
+        <span class="nav-pill-badge">IFTS 29 · Grupo 07 / Comisión B</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" role="main">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-meta-chips">
+            <span class="chip chip-primary">IFTS 29 · Desarrollo de Sistemas Web</span>
+            <span class="chip">2do Cuatrimestre · 2026</span>
+            <span class="chip chip-success">Bloque: Permisos y contratación</span>
+            <span class="chip">Sorteo S11-B · Grupo 07</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            NEXO — <span class="gradient-text">Dos sentencias, dos soluciones</span>
+          </h1>
+
+          <p class="hero-lead">
+            Presentamos dos propuestas de automatización agéntica para la gestión y validación integral de solicitudes de contratación en servicios y reparaciones del hogar y comercio.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#propuesta-1" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              Explorar Propuesta 1 (R3)
+            </a>
+            <a href="#propuesta-2" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Explorar Propuesta 2 (R4)
+            </a>
+            <a href="#cierre" class="btn btn-secondary">
+              Ver Comparativa
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-preview-box">
+          <div class="hero-card-preview">
+            <div class="preview-header">
+              <div class="preview-logo-box">
+                <img src="/assets/nexo-logo.png" alt="Identidad original de NEXO" class="preview-logo-img" width="58" height="58" />
+                <div>
+                  <h2 style="font-size: 1.15rem; margin-bottom: 2px;">NEXO Connect</h2>
+                  <p style="font-size: 0.8rem; margin: 0; color: #94a3b8;">Lo que necesitás, cuando lo necesitás.</p>
+                </div>
+              </div>
+              <span class="preview-status">TP3 FINAL</span>
+            </div>
+
+            <div class="preview-summary-list">
+              <div class="summary-item">
+                <div class="summary-item-icon icon-r3">R3</div>
+                <div class="summary-item-text">
+                  <strong>Control de Autorización Previa</strong>
+                  <span>Garantiza que ninguna propuesta no autorizada por el cliente despache solicitudes al profesional.</span>
+                </div>
+              </div>
+
+              <div class="summary-item">
+                <div class="summary-item-icon icon-r4">R4</div>
+                <div class="summary-item-text">
+                  <strong>Validación Trifactorial Pre-Envío</strong>
+                  <span>Comprueba simultáneamente vigencia, verificación y disponibilidad antes de enviar la solicitud formal.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION B: PRESENTACIÓN DE LA STARTUP NEXO -->
+    <section id="startup" class="section-py" aria-labelledby="startup-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-label">Identidad y Contexto</span>
+          <h2 id="startup-title" class="section-title">Sobre la Startup NEXO</h2>
+          <p class="section-subtitle">
+            Conectamos clientes con profesionales de reparaciones según servicio, ubicación y disponibilidad.
+          </p>
+        </header>
+
+        <div class="startup-card-main">
+          <div class="startup-grid">
+            <div class="startup-logo-container">
+              <img src="/assets/nexo-logo.png" alt="Logo original de NEXO extraído del material oficial de sorteo docente S11-B" class="startup-logo-big" width="190" height="190" />
+              <span class="logo-caption">Logo original asignado (S11-B)</span>
+            </div>
+
+            <div class="startup-info">
+              <span class="continuity-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7.5" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                Continuidad académica: IFTS 16 (Lógica) &rarr; IFTS 29 (Front End)
+              </span>
+              <h3 style="margin-top: 14px;">Plataforma Integral de Servicios y Reparaciones</h3>
+              <p class="startup-tagline">“Lo que necesitás, cuando lo necesitás.”</p>
+              <p class="startup-description">
+                <strong>NEXO</strong> es una plataforma web orientada al rubro de servicios y reparaciones técnicas (plomería, electricidad, gas, cerrajería, albañilería y climatización). Su objetivo central es intermediar de forma ágil y transparente entre usuarios que requieren una solución urgente o programada y profesionales técnicos independientes verificados.
+              </p>
+              <p class="startup-description">
+                El modelo original de funcionamiento fue modelado con lógica proposicional por estudiantes del <strong>IFTS 16</strong>. En esta etapa, el equipo de Front End del <strong>IFTS 29</strong> aborda el bloque <em>“Permisos y contratación”</em> para transformar esas reglas formales en recorridos agénticos explicables y representables en la interfaz web.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Cards: Problema, Solución y Valor -->
+        <div class="cards-three-col">
+          <article class="info-box">
+            <span class="info-box-icon" aria-hidden="true">🛠️</span>
+            <h4>El Problema en el Rubro</h4>
+            <p>
+              La contratación informal de reparaciones sufre de presupuestos ambiguos, incumplimientos de turnos y falta de validación de antecedentes. Muchos clientes reciben cobros inesperados y los técnicos pierden tiempo con solicitudes no confirmadas.
+            </p>
+          </article>
+
+          <article class="info-box">
+            <span class="info-box-icon" aria-hidden="true">🛡️</span>
+            <h4>Valor del Control de Autorizaciones</h4>
+            <p>
+              Validar el consentimiento explícito del cliente antes de cualquier acción garantiza que nadie sea comprometido sin su acuerdo. Ausencia de autorización nunca se confunde con rechazo: el sistema cuida la propuesta en espera activa.
+            </p>
+          </article>
+
+          <article class="info-box">
+            <span class="info-box-icon" aria-hidden="true">⚡</span>
+            <h4>Valor de Vigencia y Disponibilidad</h4>
+            <p>
+              Verificar en tiempo real que la cotización siga vigente y que el profesional esté efectivamente matriculado y con agenda libre en la zona evita generar solicitudes obsoletas o frustrantes para ambas partes del servicio.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C: LAS DOS SENTENCIAS ORIGINALES -->
+    <section id="sentencias" class="section-py" aria-labelledby="sentencias-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-label">Reglas Asignadas · Bloque Permisos y Contratación</span>
+          <h2 id="sentencias-title" class="section-title">Las Dos Sentencias Originales</h2>
+          <p class="section-subtitle">
+            Conservamos la redacción exacta e inalterada de las sentencias del sorteo docente (S11-B).
+          </p>
+        </header>
+
+        <div class="sentences-grid">
+          <!-- CARD R3 -->
+          <article class="sentence-card card-r3" aria-labelledby="r3-title">
+            <div class="sentence-header">
+              <span class="sentence-badge sentence-badge-r3">Sentencia 1</span>
+              <strong style="color: var(--accent-amber); font-family: var(--font-mono);">R3 · Permisos</strong>
+            </div>
+
+            <h3 id="r3-title" style="font-size: 1.25rem; margin-bottom: 12px;">Control de Autorización Previa</h3>
+
+            <div class="sentence-quote-box">
+              <blockquote class="sentence-text">
+                “Si el cliente todavía no autorizó una propuesta concreta, el sistema la mantiene pendiente y no envía una solicitud de contratación.”
+              </blockquote>
+            </div>
+
+            <div class="sentence-breakdown">
+              <ul class="breakdown-list">
+                <li><strong>Condición antecedente:</strong> El cliente todavía <em>no autorizó</em> una propuesta concreta.</li>
+                <li><strong>Consecuencia 1:</strong> El sistema <em>mantiene la propuesta pendiente</em>.</li>
+                <li><strong>Consecuencia 2:</strong> El sistema <em>NO envía</em> una solicitud de contratación.</li>
+                <li><strong>Criterio clave:</strong> No confundir la ausencia de autorización con un rechazo; la propuesta continúa disponible para decisión futura.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- CARD R4 -->
+          <article class="sentence-card card-r4" aria-labelledby="r4-title">
+            <div class="sentence-header">
+              <span class="sentence-badge sentence-badge-r4">Sentencia 2</span>
+              <strong style="color: var(--accent-green); font-family: var(--font-mono);">R4 · Contratación</strong>
+            </div>
+
+            <h3 id="r4-title" style="font-size: 1.25rem; margin-bottom: 12px;">Validación Previa al Envío</h3>
+
+            <div class="sentence-quote-box">
+              <blockquote class="sentence-text">
+                “Si el cliente autoriza una propuesta vigente de un profesional verificado y disponible, el sistema envía la solicitud y la muestra pendiente de aceptación del profesional.”
+              </blockquote>
+            </div>
+
+            <div class="sentence-breakdown">
+              <ul class="breakdown-list">
+                <li><strong>Condiciones concurrentes:</strong> El cliente autoriza la propuesta $\land$ la propuesta está vigente $\land$ el profesional está verificado $\land$ el profesional está disponible.</li>
+                <li><strong>Consecuencia 1:</strong> El sistema <em>envía la solicitud</em> de contratación.</li>
+                <li><strong>Consecuencia 2:</strong> El sistema la <em>muestra pendiente de aceptación del profesional</em>.</li>
+                <li><strong>Criterio clave:</strong> Una solicitud enviada <strong>no equivale</strong> a una contratación aceptada ni confirmada; queda supeditada a la respuesta del profesional.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D & E: PROPUESTA 1 (R3) -->
+    <section id="propuesta-1" class="section-py" aria-labelledby="propuesta-1-heading">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-label">Solución Agéntica · Sentencia 1</span>
+          <h2 id="propuesta-1-heading" class="section-title">Propuesta 1 — Control de Autorización y Solicitudes Pendientes</h2>
+          <p class="section-subtitle">
+            Cómo un futuro agente supervisor audita el estado de autorización antes de cualquier emisión de solicitud.
+          </p>
+        </header>
+
+        <div class="proposal-wrapper">
+          <div class="proposal-header-box">
+            <div class="proposal-meta">
+              <span class="proposal-num">Propuesta 01 / R3</span>
+              <h3 class="proposal-title">Auditoría de Consentimiento y Retención Preventiva</h3>
+            </div>
+            <div class="proposal-sentence-ref">
+              <strong>Regla R3:</strong> “Si el cliente todavía no autorizó una propuesta concreta, el sistema la mantiene pendiente y no envía una solicitud de contratación.”
+            </div>
+          </div>
+
+          <div class="proposal-body-grid">
+            <div>
+              <h4 style="margin-bottom: 10px; font-size: 1.2rem; color: #38bdf8;">Problema y Explicación de la Solución</h4>
+              <p style="margin-bottom: 16px;">
+                <strong>Problema que resuelve:</strong> En plataformas de servicios, es frecuente que al generarse una cotización o presupuesto, los sistemas apresuren el proceso enviando solicitudes de trabajo sin la confirmación explícita del cliente, causando fricción comercial, cancelaciones y reclamos.
+              </p>
+              <p style="margin-bottom: 16px;">
+                <strong>Solución propuesta:</strong> Diseñamos un flujo agéntico de supervisión pasiva. Cuando se intenta procesar una propuesta de contratación, el agente inspecciona el identificador de la propuesta y consulta la bitácora de autorizaciones. Si constata que el cliente <em>todavía no emitió su autorización</em>, el agente congela cualquier acción de despacho y mantiene la propuesta en estado <code>PENDIENTE</code> en el buzón del usuario.
+              </p>
+              <p>
+                <strong>Beneficio:</strong> El cliente conserva el dominio absoluto de su presupuesto y decisiones sin compromisos forzados. Para la plataforma, garantiza seguridad jurídica y elimina solicitudes accidentales a los técnicos.
+              </p>
+            </div>
+
+            <div class="spec-grid">
+              <div class="spec-card">
+                <span class="spec-card-title">📥 Datos de Entrada</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>ID de propuesta concreta (<code>propuesta_id</code>).</li>
+                    <li>ID del cliente solicitante.</li>
+                    <li>Registro de consentimiento (<code>estado_autorizacion</code>).</li>
+                    <li>Timestamp de creación de la propuesta.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-card-title">🔍 Condiciones Evaluadas</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>¿Existe registro de autorización explícita emitida por el cliente?</li>
+                    <li>Si NO: Dispara de inmediato la retención estipulada por R3.</li>
+                    <li>Si SÍ: Derivación hacia validaciones posteriores.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-card-title">⚙️ Acciones del Agente</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>Mantener el estado de la propuesta en <code>PENDIENTE</code>.</li>
+                    <li>Bloquear cualquier mensaje o evento hacia el profesional.</li>
+                    <li>Generar recordatorio visual informativo en la interfaz.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-card-title">🎯 Resultado Esperado</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>Propuesta resguardada en estado inactivo.</li>
+                    <li>Cero solicitudes enviadas al técnico.</li>
+                    <li>Transparencia en el panel del cliente.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Distinción explícita: Reglas vs Decisiones de diseño -->
+          <div class="distinction-box">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              Distinción entre Regla Original y Decisiones de Diseño Adicionales
+            </h4>
+            <table class="distinction-table">
+              <thead>
+                <tr>
+                  <th scope="col">Aspecto</th>
+                  <th scope="col">Establecido por la Regla Original (R3)</th>
+                  <th scope="col">Decisión de Diseño de Nuestra Propuesta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rama NO (Sin autorización)</td>
+                  <td><span class="badge-original">Original</span> Mantener pendiente y no enviar solicitud de contratación.</td>
+                  <td><span class="badge-design">Diseño Grupo 07</span> Mostrar recordatorio sutil al cliente y fijar fecha límite de validez del presupuesto antes de archivar.</td>
+                </tr>
+                <tr>
+                  <td>Rama SÍ (Con autorización)</td>
+                  <td><span class="badge-original">No contemplado</span> R3 no establece la contratación al autorizar.</td>
+                  <td><span class="badge-design">Diseño Grupo 07</span> No contratar automáticamente; derivar de inmediato a la Propuesta 2 (R4) para verificar viabilidad técnica.</td>
+                </tr>
+                <tr>
+                  <td>Intervención humana</td>
+                  <td><span class="badge-original">No contemplado</span></td>
+                  <td><span class="badge-design">Diseño Grupo 07</span> Botón de consulta rápida con soporte si el cliente tiene dudas sobre el alcance antes de autorizar.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- DIAGRAMA DE FLUJO 1 (SVG) -->
+          <div class="flowchart-wrapper">
+            <div class="flowchart-head">
+              <span class="flowchart-title">Diagrama de Flujo 1 — Control de Autorización (R3)</span>
+              <div class="flowchart-legend">
+                <span class="legend-item"><span class="legend-dot" style="background:#38bdf8;"></span> Inicio / Fin</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#64748b;"></span> Proceso / Consulta</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> Decisión</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> Acción R3 / R4</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#c084fc;"></span> Decisión Diseño</span>
+              </div>
+            </div>
+
+            <svg class="flow-svg" viewBox="0 0 960 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de flujo de la Propuesta 1 para la sentencia R3">
+              <defs>
+                <marker id="arrow-r3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+                </marker>
+                <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981" />
+                </marker>
+                <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b" />
+                </marker>
+              </defs>
+
+              <!-- Node 1: Inicio -->
+              <g id="r3-node-start" class="svg-r3-node svg-node-start">
+                <rect x="360" y="20" width="240" height="50" />
+                <text x="480" y="44" class="svg-text-title">INICIO: Procesar Propuesta</text>
+                <text x="480" y="58" class="svg-text-desc">Se recibe propuesta concreta de servicio</text>
+              </g>
+
+              <!-- Arrow 1 to 2 -->
+              <line x1="480" y1="70" x2="480" y2="105" class="svg-arrow-line" marker-end="url(#arrow-r3)" />
+
+              <!-- Node 2: Consulta -->
+              <g id="r3-node-query" class="svg-r3-node svg-node-process">
+                <rect x="330" y="110" width="300" height="55" />
+                <text x="480" y="134" class="svg-text-title">Consulta de Estado de Autorización</text>
+                <text x="480" y="152" class="svg-text-desc">Agente consulta bitácora de consentimientos del cliente</text>
+              </g>
+
+              <!-- Arrow 2 to 3 -->
+              <line x1="480" y1="165" x2="480" y2="205" class="svg-arrow-line" marker-end="url(#arrow-r3)" />
+
+              <!-- Node 3: Decisión R3 -->
+              <g id="r3-node-decision" class="svg-r3-node svg-node-decision">
+                <polygon points="480,210 660,260 480,310 300,260" />
+                <text x="480" y="256" class="svg-text-title" style="fill:#fef3c7;">¿El cliente autorizó</text>
+                <text x="480" y="272" class="svg-text-title" style="fill:#fef3c7;">la propuesta concreta?</text>
+              </g>
+
+              <!-- RAMA NO (Regla R3 estricta hacia abajo a la izquierda) -->
+              <line x1="300" y1="260" x2="190" y2="260" class="svg-arrow-line" style="stroke:#ef4444;" marker-end="url(#arrow-amber)" />
+              <text x="240" y="250" class="svg-badge-no">NO (R3)</text>
+
+              <!-- Node 4: Acción R3 NO -->
+              <g id="r3-node-action-no" class="svg-r3-node svg-node-alert">
+                <rect x="50" y="235" width="220" height="60" />
+                <text x="160" y="258" class="svg-text-title" style="fill:#fef08a;">REGLA R3: Mantener Pendiente</text>
+                <text x="160" y="278" class="svg-text-desc" style="fill:#fde68a;">NO enviar solicitud de contratación</text>
+              </g>
+
+              <!-- Arrow from 4 to 5 (Decisión de diseño) -->
+              <line x1="160" y1="295" x2="160" y2="335" class="svg-arrow-line" marker-end="url(#arrow-amber)" />
+
+              <!-- Node 5: Decisión de diseño adicional -->
+              <g id="r3-node-design-no" class="svg-r3-node svg-node-process" style="stroke-dasharray: 4;">
+                <rect x="40" y="340" width="240" height="55" />
+                <text x="160" y="362" class="svg-text-title" style="fill:#e9d5ff;">Decisión de Diseño Adicional</text>
+                <text x="160" y="380" class="svg-text-desc">Notificar recordatorio al cliente en panel</text>
+              </g>
+
+              <!-- Arrow to End NO -->
+              <line x1="160" y1="395" x2="160" y2="425" class="svg-arrow-line" marker-end="url(#arrow-amber)" />
+
+              <!-- Node End NO -->
+              <g id="r3-node-end-no" class="svg-r3-node svg-node-end">
+                <rect x="60" y="430" width="200" height="42" />
+                <text x="160" y="456" class="svg-text-title" style="fill:#38bdf8;">FIN: En espera activa</text>
+              </g>
+
+              <!-- RAMA SÍ (Hacia la derecha: no contrata, deriva a R4) -->
+              <line x1="660" y1="260" x2="770" y2="260" class="svg-arrow-line" style="stroke:#10b981;" marker-end="url(#arrow-green)" />
+              <text x="700" y="250" class="svg-badge-yes">SÍ (Autorizó)</text>
+
+              <!-- Node 6: Acción SÍ (Decisión de diseño adicional) -->
+              <g id="r3-node-action-yes" class="svg-r3-node svg-node-action">
+                <rect x="680" y="285" width="240" height="60" />
+                <text x="800" y="308" class="svg-text-title" style="fill:#a7f3d0;">Decisión de Diseño Adicional</text>
+                <text x="800" y="328" class="svg-text-desc" style="fill:#d1fae5;">No contratar; derivar caso a flujo R4</text>
+              </g>
+
+              <line x1="800" y1="260" x2="800" y2="280" class="svg-arrow-line" style="stroke:#10b981;" />
+              <line x1="800" y1="345" x2="800" y2="425" class="svg-arrow-line" marker-end="url(#arrow-green)" />
+
+              <!-- Node End SÍ -->
+              <g id="r3-node-end-yes" class="svg-r3-node svg-node-end">
+                <rect x="690" y="430" width="220" height="42" />
+                <text x="800" y="456" class="svg-text-title" style="fill:#34d399;">FIN: Transición a R4</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- SIMULADOR INTERACTIVO R3 -->
+          <div class="flow-simulator-panel">
+            <div class="simulator-header">
+              <span class="simulator-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Simulador Interactivo de Lógica R3
+              </span>
+              <span style="font-size: 0.8rem; color: #94a3b8;">Alterná las condiciones para ver el camino en el diagrama</span>
+            </div>
+
+            <div class="simulator-toggles-grid">
+              <label class="toggle-switch-card" for="toggle-r3-auth">
+                <input type="checkbox" id="toggle-r3-auth" class="toggle-checkbox" aria-label="¿El cliente autorizó la propuesta concreta?" />
+                <span class="toggle-label">¿El cliente autorizó la propuesta concreta?</span>
+              </label>
+            </div>
+
+            <div class="simulator-result-box">
+              <div id="r3-result-text" class="simulator-result-text">
+                Cargando estado del simulador...
+              </div>
+              <span id="r3-result-badge" class="simulator-result-badge">ESTADO: PENDIENTE</span>
+            </div>
+          </div>
+
+          <!-- DESPLEGABLE INTERACTIVO R3 -->
+          <details class="interactive-details" id="details-r3">
+            <summary class="interactive-summary">
+              <span>🔎 Desplegar ficha técnica y excepciones de la Propuesta 1 (R3)</span>
+              <svg class="summary-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+            </summary>
+            <div class="details-content-body">
+              <div class="details-subgrid">
+                <div class="details-item">
+                  <h5>🛠️ Herramientas que consultaría el Agente</h5>
+                  <p>
+                    <strong>ProposalRegistryService:</strong> Localiza y valida la existencia y versión de la cotización.<br />
+                    <strong>ClientConsentAuditTool:</strong> Revisa firmas digitales o eventos de aceptación de términos en la base de consentimientos.<br />
+                    <strong>NotificationCenterTool:</strong> Emite avisos sutiles al cliente sin contactar al técnico.
+                  </p>
+                </div>
+                <div class="details-item">
+                  <h5>👤 Protocolo de Intervención Humana</h5>
+                  <p>
+                    Si la propuesta permanece sin respuesta por más de 72 horas hábiles, el sistema ofrece una línea de mensajería con soporte de NEXO para asistir al cliente con dudas técnicas sobre el presupuesto sin presionar la contratación.
+                  </p>
+                </div>
+                <div class="details-item">
+                  <h5>⚖️ Ausencia de Autorización vs. Rechazo</h5>
+                  <p>
+                    Es vital la precisión semántica: un cliente que no ha respondido <strong>no ha rechazado</strong> el servicio. Por ende, la propuesta no se cancela ni se archiva como fallida; se resguarda en espera activa.
+                  </p>
+                </div>
+                <div class="details-item">
+                  <h5>🚀 Paso a Flujos Posteriores</h5>
+                  <p>
+                    Si el cliente autoriza formalmente, la sentencia R3 no le atribuye una contratación automática. El sistema transfiere el control a la regla R4 para garantizar que el profesional y la propuesta sean válidos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D & E: PROPUESTA 2 (R4) -->
+    <section id="propuesta-2" class="section-py" aria-labelledby="propuesta-2-heading">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-label">Solución Agéntica · Sentencia 2</span>
+          <h2 id="propuesta-2-heading" class="section-title">Propuesta 2 — Validación Previa al Envío de una Contratación</h2>
+          <p class="section-subtitle">
+            Cómo un futuro agente orquestador valida la conjunción de vigencia, verificación y disponibilidad antes de enviar la solicitud.
+          </p>
+        </header>
+
+        <div class="proposal-wrapper">
+          <div class="proposal-header-box">
+            <div class="proposal-meta">
+              <span class="proposal-num">Propuesta 02 / R4</span>
+              <h3 class="proposal-title">Validación Trifactorial y Despacho Condicional</h3>
+            </div>
+            <div class="proposal-sentence-ref">
+              <strong>Regla R4:</strong> “Si el cliente autoriza una propuesta vigente de un profesional verificado y disponible, el sistema envía la solicitud y la muestra pendiente de aceptación del profesional.”
+            </div>
+          </div>
+
+          <div class="proposal-body-grid">
+            <div>
+              <h4 style="margin-bottom: 10px; font-size: 1.2rem; color: #34d399;">Problema y Explicación de la Solución</h4>
+              <p style="margin-bottom: 16px;">
+                <strong>Problema que resuelve:</strong> Enviar solicitudes de contratación sin verificar las condiciones actuales del técnico provoca altas tasas de rechazo, frustración cuando la cotización ya venció, o riesgos de seguridad si el profesional fue suspendido de la plataforma.
+              </p>
+              <p style="margin-bottom: 16px;">
+                <strong>Solución propuesta:</strong> Diseñamos un agente validador concurrente. Tras recibir la autorización del cliente, el agente evalúa en paralelo tres condiciones obligatorias: 1) Que la propuesta no esté vencida (vigencia); 2) Que el profesional cuente con identidad y matrícula aprobadas (verificación); 3) Que su agenda tenga cupo libre para el horario y zona geográfica requerida (disponibilidad).
+              </p>
+              <p>
+                <strong>Beneficio:</strong> Garantiza al cliente que sólo se contactará a técnicos aptos e inmediatamente disponibles. Mantiene al profesional protegido de solicitudes fuera de término y consolida la reputación de NEXO.
+              </p>
+            </div>
+
+            <div class="spec-grid">
+              <div class="spec-card">
+                <span class="spec-card-title">📥 Datos de Entrada</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>ID de propuesta autorizada.</li>
+                    <li>Timestamp de vencimiento (vigencia).</li>
+                    <li>ID y estado de acreditación del profesional.</li>
+                    <li>Franja horaria y geolocalización requerida.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-card-title">🔍 Condiciones Concurrentes</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>Condición 1: Propuesta vigente = SÍ.</li>
+                    <li>Condición 2: Profesional verificado = SÍ.</li>
+                    <li>Condición 3: Profesional disponible = SÍ.</li>
+                    <li><strong>Conjunción estricta:</strong> $C_1 \land C_2 \land C_3$.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-card-title">⚙️ Acciones del Agente</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>Enviar la solicitud formal al técnico.</li>
+                    <li>Actualizar estado en el panel del cliente a: <em>“Pendiente de aceptación del profesional”</em>.</li>
+                    <li>Notificar al técnico en su app de trabajo.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-card-title">🎯 Resultado Esperado</span>
+                <div class="spec-card-content">
+                  <ul>
+                    <li>Solicitud enviada a la bandeja del técnico.</li>
+                    <li>El cliente sabe que el técnico debe aceptar.</li>
+                    <li><strong>NO es contratación confirmada aún.</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Distinción explícita: Reglas vs Decisiones de diseño -->
+          <div class="distinction-box">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              Distinción entre Regla Original y Decisiones de Diseño Adicionales
+            </h4>
+            <table class="distinction-table">
+              <thead>
+                <tr>
+                  <th scope="col">Aspecto</th>
+                  <th scope="col">Establecido por la Regla Original (R4)</th>
+                  <th scope="col">Decisión de Diseño de Nuestra Propuesta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rama SÍ (Todas cumplidas)</td>
+                  <td><span class="badge-original">Original</span> Enviar la solicitud y mostrarla pendiente de aceptación del profesional.</td>
+                  <td><span class="badge-design">Diseño Grupo 07</span> Establecer un temporizador de SLA de 24 hs para respuesta del profesional antes de alertar a soporte.</td>
+                </tr>
+                <tr>
+                  <td>Rama NO (Falla al menos una)</td>
+                  <td><span class="badge-original">Implícito</span> No se envía la solicitud en esas condiciones.</td>
+                  <td><span class="badge-design">Diseño Grupo 07</span> Retener el envío, diagnosticar la causa específica y activar un protocolo de intervención humana y sugerencia de alternativas.</td>
+                </tr>
+                <tr>
+                  <td>Confirmación de contratación</td>
+                  <td><span class="badge-original">Original</span> No es contratación aceptada; sólo solicitud enviada en espera.</td>
+                  <td><span class="badge-design">Diseño Grupo 07</span> Despliegue de un badge de estado amarillo "En espera del técnico" en la interfaz de usuario.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- DIAGRAMA DE FLUJO 2 (SVG) -->
+          <div class="flowchart-wrapper">
+            <div class="flowchart-head">
+              <span class="flowchart-title">Diagrama de Flujo 2 — Validación Previa al Envío (R4)</span>
+              <div class="flowchart-legend">
+                <span class="legend-item"><span class="legend-dot" style="background:#38bdf8;"></span> Inicio / Fin</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#64748b;"></span> Consultas Concurrentes</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#f59e0b;"></span> Decisión Conjunción</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#10b981;"></span> Acción R4 SÍ</span>
+                <span class="legend-item"><span class="legend-dot" style="background:#ef4444;"></span> Retención y Derivación</span>
+              </div>
+            </div>
+
+            <svg class="flow-svg" viewBox="0 0 960 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de flujo de la Propuesta 2 para la sentencia R4">
+              <defs>
+                <marker id="arrow-r4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+                </marker>
+                <marker id="arrow-r4-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981" />
+                </marker>
+                <marker id="arrow-r4-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#ef4444" />
+                </marker>
+              </defs>
+
+              <!-- Node 1: Inicio -->
+              <g id="r4-node-start" class="svg-r4-node svg-node-start">
+                <rect x="350" y="15" width="260" height="48" />
+                <text x="480" y="36" class="svg-text-title">INICIO: Cliente autoriza propuesta</text>
+                <text x="480" y="52" class="svg-text-desc">Identificación de propuesta y profesional</text>
+              </g>
+
+              <!-- Arrow 1 to Queries -->
+              <line x1="480" y1="63" x2="480" y2="95" class="svg-arrow-line" marker-end="url(#arrow-r4)" />
+
+              <!-- Node 2: 3 Consultas en paralelo -->
+              <g id="r4-node-queries" class="svg-r4-node svg-node-process">
+                <rect x="180" y="100" width="600" height="70" />
+                <text x="480" y="122" class="svg-text-title">Consultas Concurrentes de Viabilidad (Agente NEXO)</text>
+                <text x="480" y="142" class="svg-text-desc">1. Consulta Vigencia | 2. Verificación Profesional | 3. Disponibilidad en Agenda</text>
+                <text x="480" y="158" class="svg-text-desc" style="fill:#38bdf8;">(Herramientas: ProposalValidityTool, AccreditationService, CalendarTool)</text>
+              </g>
+
+              <!-- Arrow Queries to Decision -->
+              <line x1="480" y1="170" x2="480" y2="205" class="svg-arrow-line" marker-end="url(#arrow-r4)" />
+
+              <!-- Node 3: Decisión Conjunción R4 -->
+              <g id="r4-node-decision" class="svg-r4-node svg-node-decision">
+                <polygon points="480,210 680,265 480,320 280,265" />
+                <text x="480" y="258" class="svg-text-title" style="fill:#fef3c7;">¿Se cumplen las 3 condiciones?</text>
+                <text x="480" y="278" class="svg-text-title" style="fill:#fef3c7; font-size:11px;">(Vigente AND Verificado AND Disponible)</text>
+              </g>
+
+              <!-- RAMA SÍ (Hacia la derecha: Éxito R4) -->
+              <line x1="680" y1="265" x2="770" y2="265" class="svg-arrow-line" style="stroke:#10b981;" marker-end="url(#arrow-r4-green)" />
+              <text x="700" y="255" class="svg-badge-yes">SÍ (Todas)</text>
+
+              <!-- Node 4: Acción R4 SÍ -->
+              <g id="r4-node-action-yes" class="svg-r4-node svg-node-action">
+                <rect x="680" y="295" width="250" height="70" />
+                <text x="805" y="320" class="svg-text-title" style="fill:#a7f3d0;">REGLA R4: Enviar Solicitud</text>
+                <text x="805" y="340" class="svg-text-desc" style="fill:#d1fae5;">Mostrar: "Pendiente de aceptación"</text>
+                <text x="805" y="356" class="svg-text-desc" style="fill:#d1fae5;">(NO es contratación aceptada aún)</text>
+              </g>
+
+              <!-- Arrow from 4 to End SÍ -->
+              <line x1="805" y1="365" x2="805" y2="425" class="svg-arrow-line" marker-end="url(#arrow-r4-green)" />
+
+              <!-- Node End SÍ -->
+              <g id="r4-node-end-yes" class="svg-r4-node svg-node-end">
+                <rect x="695" y="430" width="220" height="50" />
+                <text x="805" y="454" class="svg-text-title" style="fill:#34d399;">FIN: Solicitud Despachada</text>
+                <text x="805" y="470" class="svg-text-desc">En espera de confirmación del profesional</text>
+              </g>
+
+              <!-- RAMA NO (Hacia la izquierda: Retención preventiva y diseño) -->
+              <line x1="280" y1="265" x2="190" y2="265" class="svg-arrow-line" style="stroke:#ef4444;" marker-end="url(#arrow-r4-red)" />
+              <text x="220" y="255" class="svg-badge-no">NO (Falta &ge;1)</text>
+
+              <!-- Node 5: Acción R4 NO -->
+              <g id="r4-node-action-no" class="svg-r4-node svg-node-alert" style="stroke:#ef4444; fill:#450a0a;">
+                <rect x="40" y="235" width="240" height="60" />
+                <text x="160" y="258" class="svg-text-title" style="fill:#fca5a5;">Retención Preventiva</text>
+                <text x="160" y="278" class="svg-text-desc" style="fill:#fecaca;">NO enviar solicitud como válida</text>
+              </g>
+
+              <!-- Arrow to Human Intervention -->
+              <line x1="160" y1="295" x2="160" y2="335" class="svg-arrow-line" marker-end="url(#arrow-r4-red)" />
+
+              <!-- Node 6: Intervención Humana (Decisión de diseño) -->
+              <g id="r4-node-human" class="svg-r4-node svg-node-alert">
+                <rect x="30" y="340" width="260" height="65" />
+                <text x="160" y="362" class="svg-text-title" style="fill:#fef08a;">Intervención Humana / Alternativas</text>
+                <text x="160" y="380" class="svg-text-desc">Revisión de causa (vencida / no disponible / no verificado)</text>
+                <text x="160" y="396" class="svg-text-desc">Ofrecer reprogramación o profesional sustituto</text>
+              </g>
+
+              <!-- Arrow to End NO -->
+              <line x1="160" y1="405" x2="160" y2="435" class="svg-arrow-line" marker-end="url(#arrow-r4-red)" />
+
+              <!-- Node End NO -->
+              <g id="r4-node-end-no" class="svg-r4-node svg-node-end">
+                <rect x="50" y="440" width="220" height="50" />
+                <text x="160" y="462" class="svg-text-title" style="fill:#f87171;">FIN: Caso Derivado a Soporte</text>
+                <text x="160" y="478" class="svg-text-desc">Cliente informado con opciones claras</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- SIMULADOR INTERACTIVO R4 -->
+          <div class="flow-simulator-panel">
+            <div class="simulator-header">
+              <span class="simulator-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Simulador Interactivo de Lógica R4 (Conjunción de 3 Condiciones)
+              </span>
+              <span style="font-size: 0.8rem; color: #94a3b8;">Probá casos límite y comprobá la respuesta del sistema</span>
+            </div>
+
+            <div class="simulator-toggles-grid">
+              <label class="toggle-switch-card" for="toggle-r4-vigente">
+                <input type="checkbox" id="toggle-r4-vigente" class="toggle-checkbox" checked aria-label="1. ¿Propuesta vigente?" />
+                <span class="toggle-label">1. ¿Propuesta vigente?</span>
+              </label>
+
+              <label class="toggle-switch-card" for="toggle-r4-verificado">
+                <input type="checkbox" id="toggle-r4-verificado" class="toggle-checkbox" checked aria-label="2. ¿Profesional verificado?" />
+                <span class="toggle-label">2. ¿Profesional verificado?</span>
+              </label>
+
+              <label class="toggle-switch-card" for="toggle-r4-disponible">
+                <input type="checkbox" id="toggle-r4-disponible" class="toggle-checkbox" checked aria-label="3. ¿Profesional disponible?" />
+                <span class="toggle-label">3. ¿Profesional disponible?</span>
+              </label>
+            </div>
+
+            <div class="simulator-result-box">
+              <div id="r4-result-text" class="simulator-result-text">
+                Cargando estado del simulador...
+              </div>
+              <span id="r4-result-badge" class="simulator-result-badge">SOLICITUD ENVIADA</span>
+            </div>
+          </div>
+
+          <!-- DESPLEGABLE INTERACTIVO R4 -->
+          <details class="interactive-details" id="details-r4">
+            <summary class="interactive-summary">
+              <span>🔎 Desplegar ficha técnica y excepciones de la Propuesta 2 (R4)</span>
+              <svg class="summary-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+            </summary>
+            <div class="details-content-body">
+              <div class="details-subgrid">
+                <div class="details-item">
+                  <h5>🛠️ Herramientas que consultaría el Agente</h5>
+                  <p>
+                    <strong>ProposalValidityCheckerTool:</strong> Evalúa si la fecha límite estipulada en la cotización sigue vigente y si los precios no expiraron.<br />
+                    <strong>ProfessionalAccreditationService:</strong> Verifica certificados de matrícula, antecedentes y habilitación legal activa.<br />
+                    <strong>RealTimeCalendarSchedulerTool:</strong> Inspecciona solapamientos de turnos en la zona del servicio.
+                  </p>
+                </div>
+                <div class="details-item">
+                  <h5>👤 Casos de Excepción e Intervención Humana</h5>
+                  <p>
+                    <strong>Caso A (Propuesta vencida):</strong> El agente no envía la solicitud; ofrece al usuario un botón de "Solicitar actualización de presupuesto".<br />
+                    <strong>Caso B (Profesional sin disponibilidad):</strong> El agente propone reprogramar la franja horaria o sugiere 2 técnicos alternativos verificados en la zona.<br />
+                    <strong>Caso C (Falla de verificación):</strong> Alerta inmediata a Compliance y retención total para proteger al usuario.
+                  </p>
+                </div>
+                <div class="details-item">
+                  <h5>📌 Diferencia entre Solicitud y Contratación</h5>
+                  <p>
+                    La regla R4 es enfática: se envía la <em>solicitud</em> y se muestra como <em>pendiente de aceptación del profesional</em>. Bajo ninguna circunstancia debe asumirse que el servicio ya está contratado de forma irrevocable; el técnico debe aceptar voluntariamente la orden.
+                  </p>
+                </div>
+                <div class="details-item">
+                  <h5>⏱️ SLA y Temporizadores de Aceptación</h5>
+                  <p>
+                    Como decisión de diseño adicional, el sistema otorga una ventana de 24 horas al profesional para responder. Si no responde dentro del plazo, un operador de guardia contacta al técnico o reasigna el pedido.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION G: COMPARATIVA Y CIERRE -->
+    <section id="cierre" class="section-py" aria-labelledby="cierre-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-label">Síntesis Arquitectónica</span>
+          <h2 id="cierre-title" class="section-title">Comparativa y Cierre de las Soluciones</h2>
+          <p class="section-subtitle">
+            Cómo ambas propuestas se complementan para blindar el ciclo de vida de la contratación en NEXO.
+          </p>
+        </header>
+
+        <div class="closing-card">
+          <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 24px;">
+            Las sentencias <strong>R3</strong> y <strong>R4</strong> representan dos etapas consecutivas e interdependientes en la gestión de permisos y contratación dentro de <strong>NEXO</strong>. Ambas comparten el principio fundamental de <strong>evitar avanzar a ciegas sin cumplir condiciones estrictas</strong>, pero actúan sobre momentos distintos del proceso:
+          </p>
+
+          <div class="matrix-table-wrap">
+            <table class="matrix-table" aria-label="Matriz comparativa entre la Propuesta 1 (R3) y la Propuesta 2 (R4)">
+              <thead>
+                <tr>
+                  <th scope="col">Dimensión</th>
+                  <th scope="col">Propuesta 1 — Control de Autorización (R3)</th>
+                  <th scope="col">Propuesta 2 — Validación Previa al Envío (R4)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Momento del Flujo</td>
+                  <td>Etapa previa de consentimiento del cliente.</td>
+                  <td>Etapa posterior a la autorización del cliente.</td>
+                </tr>
+                <tr>
+                  <td>Condición Principal</td>
+                  <td>Verificar si el cliente <em>ya autorizó</em> o <em>todavía no autorizó</em>.</td>
+                  <td>Conjunción estricta de 3 factores: Propuesta Vigente $\land$ Profesional Verificado $\land$ Profesional Disponible.</td>
+                </tr>
+                <tr>
+                  <td>Acción si NO se cumple</td>
+                  <td>Mantener la propuesta pendiente; <strong>NO enviar solicitud</strong> de contratación.</td>
+                  <td>Retener la solicitud; <strong>NO enviar al profesional</strong>; activar intervención humana o alternativas.</td>
+                </tr>
+                <tr>
+                  <td>Acción si SÍ se cumple</td>
+                  <td>(Diseño): No contratar automáticamente; transferir al flujo R4 para validar viabilidad técnica.</td>
+                  <td>(Regla): <strong>Enviar la solicitud</strong> y mostrarla <em>pendiente de aceptación del profesional</em>.</td>
+                </tr>
+                <tr>
+                  <td>Estado en Interfaz</td>
+                  <td>Propuesta en espera en el panel del cliente.</td>
+                  <td>Solicitud enviada; pendiente de confirmación mutua.</td>
+                </tr>
+                <tr>
+                  <td>Garantía para el Negocio</td>
+                  <td>Consentimiento explícito y protección al consumidor.</td>
+                  <td>Viabilidad operativa, agendas coordinadas y seguridad técnica.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="background: rgba(14, 165, 233, 0.08); border-left: 4px solid var(--primary-blue); padding: 20px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-top: 24px;">
+            <p style="color: #e2e8f0; font-size: 1.05rem; margin: 0;">
+              <strong>Conclusión integradora:</strong> R3 garantiza que la voluntad del usuario sea respetada de manera inviolable, mientras que R4 asegura que, una vez otorgada dicha voluntad, el sistema no comprometa al usuario ni al profesional si las condiciones técnicas de vigencia, verificación o disponibilidad no están dadas. Juntas, erradican contrataciones fantasma y consolidan un ecosistema confiable.
+            </p>
+          </div>
+
+          <div class="closing-actions">
+            <a href="#hero" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+              Volver al Inicio
+            </a>
+            <a href="#propuesta-1" class="btn btn-primary">
+              Revisar Propuesta 1 (R3)
+            </a>
+            <a href="#propuesta-2" class="btn btn-primary">
+              Revisar Propuesta 2 (R4)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EQUIPO Y DATOS ACADÉMICOS -->
+    <section id="equipo" class="team-section" aria-labelledby="equipo-title">
+      <div class="container">
+        <header class="section-head" style="margin-bottom: 30px;">
+          <span class="section-label">Información Académica</span>
+          <h2 id="equipo-title" class="section-title">Equipo de Trabajo · IFTS 29</h2>
+          <p class="section-subtitle">
+            Tecnicatura Superior en Desarrollo de Software · Desarrollo de Sistemas Web / Front End (2026 - 2do Cuatrimestre)
+          </p>
+          <div style="margin-top: 10px;">
+            <span class="chip chip-primary">Grupo 07 (Asignación docente Sorteo S11-B: NEXO)</span>
+            <span class="chip chip-success">Comisión B · Grupo 10</span>
+          </div>
+        </header>
+
+        <div class="team-grid">
+          <div class="member-card">
+            <div class="member-avatar">GG</div>
+            <h3 class="member-name">Guido Gattás</h3>
+            <span class="member-role">Front End & Coordinación</span>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar">MG</div>
+            <h3 class="member-name">María Belén Gatto</h3>
+            <span class="member-role">Lógica de Flujos & UI/UX</span>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar">LK</div>
+            <h3 class="member-name">Lucas Katz</h3>
+            <span class="member-role">Accesibilidad & Componentes</span>
+          </div>
+
+          <div class="member-card">
+            <div class="member-avatar">GS</div>
+            <h3 class="member-name">Gonzalo Santini</h3>
+            <span class="member-role">Testing & Documentación</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div>
+        <strong>NEXO — Práctica Formativa TP3</strong> · IFTS 29 · Desarrollo de Sistemas Web
+      </div>
+      <div>
+        Construcción 100% Agéntica · Reglas originadas en IFTS 16
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Module Script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
