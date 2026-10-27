@@ -178,3 +178,5 @@ En estricto cumplimiento con la consigna de *“Construcción 100% Agéntica: Us
 - [x] Diseño responsive probado en desktop sin desbordes.
 - [x] Compilación exitosa en Vite con `npm run build` sin errores.
 - [x] Archivo `.gitignore` configurado (excluyendo `node_modules` y `dist`).
+#   t p 3 - n e x o - i f t s 2 9  
+ 
