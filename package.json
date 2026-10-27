@@ -1,9 +1,9 @@
 {
-  "name": "tp3-nexo-ifts29",
+  "name": "tp3-flexcontrol-ifts29",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "TP3 IFTS 29 - Dos sentencias, dos soluciones - Startup NEXO - Grupo 07 / Comisión B Grupo 10",
+  "description": "TP3 IFTS 29 - Dos sentencias, dos soluciones - Startup FlexControl - Grupo 10 Comisión B",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
