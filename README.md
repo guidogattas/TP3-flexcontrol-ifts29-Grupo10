@@ -24,10 +24,10 @@ Landing page institucional y técnica desarrollada para la presentación de dos 
 
 | Integrante | Rol Principal | Aportes Concretos y Tareas Realizadas |
 | :--- | :--- | :--- |
-| **Guido Gattás** | Front End & Coordinación | Coordinación del flujo agéntico, maquetación semántica en HTML5, arquitectura de componentes, estructuración del repositorio y setup de Vite. `[Completar detalle adicional si aplica: ...]` |
-| **María Belén Gatto** | Lógica de Flujos & UI/UX | Análisis proposicional de las sentencias R3 y R4 de FlexControl, diseño de experiencia de usuario, contraste de paleta (amarillo/verde de FlexControl) y definición de árboles de decisión. `[Completar detalle adicional si aplica: ...]` |
-| **Lucas Katz** | Accesibilidad & Componentes | Implementación de navegación accesible por teclado (focus ring, ARIA roles), desarrollo de desplegables `<details>` y diagramación vectorial en SVG interactivo. `[Completar detalle adicional si aplica: ...]` |
-| **Gonzalo Santini** | Testing & Documentación | Pruebas de compilación en Vite, validación responsive sin desbordes en desktop, desarrollo de simuladores interactivos de prueba y redacción del informe técnico. `[Completar detalle adicional si aplica: ...]` |
+| **Guido Gattás** | Front End & Coordinación | Coordinación del flujo agéntico, maquetación semántica en HTML5, arquitectura de componentes, estructuración del repositorio y setup de Vite. |
+| **María Belén Gatto** | Lógica de Flujos & UI/UX | Análisis proposicional de las sentencias R3 y R4 de FlexControl, diseño de experiencia de usuario, contraste de paleta (amarillo/verde de FlexControl) y definición de árboles de decisión. |
+| **Lucas Katz** | Accesibilidad & Componentes | Implementación de navegación accesible por teclado (focus ring, ARIA roles), desarrollo de desplegables `<details>` y diagramación vectorial en SVG interactivo. |
+| **Gonzalo Santini** | Testing & Documentación | Pruebas de compilación en Vite, validación responsive sin desbordes en desktop, desarrollo de simuladores interactivos de prueba y redacción del informe técnico. |
 
 ### Evidencia de Colaboración y Revisión entre Integrantes (Rúbrica - Nivel Propone)
 - **Revisión 1 (Gattás & Gatto):** Al analizar la sentencia R3, se remarcó la importancia de no interpretar la falta de confirmación del operador como un descarte del paquete, sino como la permanencia en el estado de empaque previo (`EN_PREPARACION`). Como decisión de diseño, se incorporó un temporizador de alerta (SLA de preparación) para avisar al supervisor de piso si un bulto excede el tiempo estimado de embalaje.
@@ -105,7 +105,7 @@ Contar con [Node.js](https://nodejs.org/) (versión 18 o superior) y `npm`.
 ### Paso a Paso
 1. **Ingresar a la carpeta del proyecto:**
    ```powershell
-   cd "C:\Users\DyG\.gemini\antigravity\scratch\tp3-nexo-ifts29"
+   cd "TP3-flexcontrol-ifts29-Grupo10"
    ```
 
 2. **Instalar dependencias:**
@@ -146,17 +146,17 @@ En cumplimiento de la consigna de *“Construcción 100% Agéntica: Ustedes diri
   - Verificación de compilación en Vite y preparación del repositorio Git.
 
 ### Evidencia de Iteración (Rúbrica - Nivel Propone)
-- **Instrucción inicial:** Se solicitó iniciar la construcción del proyecto a partir de un prompt base.
-- **Problema detectado:** El prompt inicial mezclaba la asignación del Grupo 07 (NEXO) con la mención al Grupo 10 y adjuntaba el logo de FlexControl. El usuario solicitó la corrección inmediata: *"me lo hiciste del grupo 7, y somos el grupo 10 te pasé el logo de FlexControl también, reformula todo"*.
-- **Corrección ejecutada:** Se reexaminó el PDF oficial del sorteo en la página 23 (correspondiente a Grupo 10 · S06-B: FlexControl · Preparación y aviso). Se incorporó el logo oficial en formato WebP en `public/assets/flexcontrol-logo.webp`, se actualizaron los colores a la identidad visual de FlexControl (amarillo logístico `#F59E0B` y verde esmeralda `#10B981`) y se reconstruyeron por completo las sentencias, propuestas, diagramas SVG y simuladores interactivos con la lógica estricta de empaque de bultos y avisos a transportistas.
-- **Resultado obtenido:** Proyecto 100% fiel a la asignación de sorteo del Grupo 10 (FlexControl), con diagramas lógicos precisos y compilación verificada.
+- **Instrucción inicial:** Se solicitó iniciar la construcción del proyecto a partir de los datos base del sorteo docente.
+- **Problema detectado:** En la formulación inicial de requerimientos existía una discrepancia con el sorteo docente S11-B frente a la asignación real del equipo. El equipo detectó la inconsistencia y aclaró que la asignación oficial correspondiente al Grupo 10 (Comisión B) es el bloque S06-B: **FlexControl** (Logística y distribución), adjuntando el isotipo oficial de la marca.
+- **Corrección ejecutada:** Se reexaminó la página 23 del PDF oficial de consignas (Grupo 10 · S06-B · Preparación y aviso). Se incorporó el logo oficial en formato WebP en `public/assets/flexcontrol-logo.webp`, se adaptó la paleta cromática a la identidad de FlexControl (amarillo logístico `#F59E0B` y verde esmeralda `#10B981`) y se reconstruyeron por completo las sentencias R3 y R4, las propuestas agénticas, los diagramas de flujo SVG y los simuladores interactivos de prueba.
+- **Resultado obtenido:** Proyecto 100% fiel a la asignación de sorteo del Grupo 10 (FlexControl), con diagramas lógicos precisos, validación de acuse de mensajería y compilación verificada.
 
 ---
 
 ## 9. Enlaces del Proyecto
 
-- **Repositorio de GitHub:** `[https://github.com/TU_USUARIO/tp3-flexcontrol-ifts29]` *(Reemplazar con la URL final del repositorio del grupo)*
-- **Landing Page Publicada:** `[https://tu-usuario.github.io/tp3-flexcontrol-ifts29/]` o `[https://flexcontrol-tp3-ifts29.vercel.app]` *(Reemplazar una vez desplegado en Vercel, Netlify o GitHub Pages)*
+- **Repositorio de GitHub:** [https://github.com/guidogattas/TP3-flexcontrol-ifts29-Grupo10](https://github.com/guidogattas/TP3-flexcontrol-ifts29-Grupo10)
+- **Landing Page Publicada en Vercel:** [https://tp3-flexcontrol-ifts29-grupo10.vercel.app/](https://tp3-flexcontrol-ifts29-grupo10.vercel.app/)
 
 ---
 
@@ -173,4 +173,4 @@ En cumplimiento de la consigna de *“Construcción 100% Agéntica: Ustedes diri
 - [x] Logo oficial de FlexControl incorporado en cabecera, hero y sección startup.
 - [x] Diseño responsive sin desbordes en desktop.
 - [x] Compilación exitosa con `npm run build` en Vite (0 errores).
-- [x] `.gitignore` y repositorio Git preparados para publicación.
+- [x] Repositorio Git y despliegue en Vercel configurados y publicados.
